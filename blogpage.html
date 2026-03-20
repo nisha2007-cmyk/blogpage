@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+
+    <style>
+        body {
+            font: 20px;
+            margin: 2px;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav {
+            background-color: #555;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        section {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 10px auto;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Blog</h1>
+        <p>Welcome to my simple blog page</p>
+    </header>
+
+    <nav>
+        <a href="Home">Home</a>
+        <a href="About">About</a>
+        <a href="Blog">Blog</a>
+        <a href="Contact">Contact</a>
+    </nav>
+
+    <section>
+        <h2>Blog Page</h2>
+
+        <img src="https://play-lh.googleusercontent.com/Eh-N9HKWJgQ4Oa5wmhaE5RbHkB3m3Ud9tsW6saUHis05BL7Xnpubi5iamR5lDKd-Ew"
+            alt="Blog Image" height="350px" width="350px">
+
+        <h2>Contact Form</h2>
+
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Contact</label>
+            <input type="tel" id="phone" required>
+
+            <label for="Massage">Massage</label>
+            <input type="Massage" id="massage" required>
+
+            <button type="submit">Submit</button>
+            <button id="my button">click me</button>
+            <p id="demo"></p>
+            <script>
+
+                const btn = document.getElementById("mybutton");
+                btn.addEventListener("click", function () {
+                    document.getElementById("demo").innerHTML = "form submit";
+                    event.preventDefault();
+                });
+            </script>
+            <p onmouseover="this.style.color='blue'">
+                Hover over this text
+            </p>
+        </form>
+    </section>
+
+    <footer>
+        <p>Basic blog System</p>
+    </footer>
+
+</body>
+
+</html>
